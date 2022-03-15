@@ -1,6 +1,7 @@
 import React from "react";
 import room from "../images/room.png";
 import mason from "../images/mason.png";
+import fum from "../images/fum.png";
 import "../App.css";
 import { Container, Row, Col } from "react-grid-system";
 const Home = () => {
@@ -152,7 +153,34 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      {/* <section > className='our__goal__section'  */}
+      <section >
+        <div  style={{
+            padding: '64px',
+            position: 'relative',
+            width: '100%',
+            height: '508px',
+            left: '0px',
+            top: '50px',
+            justifyContent: 'space-between',
+            background: 'rgba(6, 56, 99, 0.03)'
+        }}>
+          <div className="row">
+            <div className="text__column">
+            <h4 className="text__header" style={{color: "#063863", fontSize: '30px', paddingBottom: '50px'}}>
+            With us, every home is a haven of comfort.
+              </h4>
+              <p className="home__text__body">
+                From tile installation, to capentry, bricklaying hardwood flooring and everything home
+                remodelling. We are your one stop shop for everything home remodelling.
+              </p>
+            </div>
+            <div class="image__column">
+              <img src={fum} alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+  
       <section style={{
            padding: '64px',
            position: 'relative',
@@ -163,7 +191,7 @@ const Home = () => {
           marginRight: '50px',
           top: '50px',
           justifyContent: 'space-between',
-          marginTop: '50px',
+          marginTop: '180px',
           background: '#063863',
       }}>
         <Container>
@@ -190,14 +218,37 @@ const Home = () => {
           </Row>
         </Container>
     </section>
-    <section className="about__section-mission">
+    <section className="about__section-mission" style={{
+      marginTop: '50px',
+    }}>
         <div class="about__section-mission-container">
           <div class="row">
             <div className="mission__text__column">
               <h5>Subscribe to get the latest news about us</h5>
-              <p>
+              <p style={{
+                marginTop: '2px',
+              }}>
               Enter your email to get news about our latest updates and offers
               </p>
+              <center>
+                 <input className="newsletter" style={{
+                   marginTop:'20px',
+                 width: '40%',
+                 borderColor: '#fff',
+                 
+                 }} required/>
+                 <button className="btn btn-primary" style={{
+                   top: '0',
+                   borderRadius: '0px',
+                   right: '0px',
+                   marginLeft: '-110px',
+                   zIndex: '2',
+                   border: 'none',
+                   height: '45px',
+                   cursor: 'pointer',
+                 }}>Subscribe</button>
+              </center>
+             
             </div>
           </div>
         </div>
