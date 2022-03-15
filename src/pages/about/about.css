@@ -1,0 +1,131 @@
+.about__section-top {
+  /* display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%; */
+}
+
+.about__section-top-container {
+  padding: 64px;
+  position: relative;
+  width: 100%;
+  height: 508px;
+  left: 0px;
+  top: 50px;
+  justify-content: space-between;
+  background: #063863;
+}
+
+/* Clear floats */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* 2/3 column */
+.text__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left;
+  color: #fff;
+  width: 692px;
+  height: 197px;
+  left: 64px;
+  top: 386px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+/* 1/3 column */
+.image__column {
+  float: left;
+  position: absolute;
+  overflow: visible;
+  top: -50px !important;
+  bottom: -50 !important;
+  margin-top: 0;
+  width: 442px;
+  height: 622px;
+  left: 879px;
+}
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+ @media screen and (max-width: 1000px) {
+    .text__column,
+    .image__column {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+.about__services-section {
+  background: #fff;
+  margin: 150px 0px;
+  display: grid;
+}
+
+.services__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  padding: 20px;
+  color: #063863;
+}
+
+.service__items {
+  justify-content: space-around;
+  background: #fff;
+}
+
+.mission__section {
+  background: rgba(6, 56, 99, 0.03);
+  justify-content: center;
+}
+
+.about__section-mission-container {
+  padding: 64px;
+  position: relative;
+  width: 100%;
+  /* width: 1440px; */
+  height: 508px;
+  left: 0px;
+  justify-content: center;
+  color: #06386308;
+  background: rgba(6, 56, 99, 0.03);
+}
+
+.mission__text__column h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  top: calc(50% - 262px / 2 + 677px);
+  justify-content: center;
+  color: #063863;
+}
+
+.mission__text__column p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #063863;
+}
+
+.about__section-professional-container {
+  background: #fff;
+}
+
