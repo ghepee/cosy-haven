@@ -19,7 +19,7 @@ function App() {
         <Route path='/services' component={Services} />
         <Route path='/contact-us' component={Contact} />
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }
